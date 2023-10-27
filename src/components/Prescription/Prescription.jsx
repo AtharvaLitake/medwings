@@ -26,8 +26,7 @@ const Prescription = () => {
       instance.post('setPrescriptionOrder/', formData)
         .then(response => {
           toast.success(response.data.msg);
-          setSelectedFile(null); // Clear the selectedFile state
-          // Clear the file input value
+          setSelectedFile(null); 
           document.getElementById('fileInput').value = '';
           return response.data;
         })
@@ -41,8 +40,9 @@ const Prescription = () => {
   return (
     <div className="Prescription">
       <div className="pupload">
-        <h1>Upload Your Prescription Here</h1>
+        <h1>Upload Your Prescription</h1>
         <input type="file" id="fileInput" accept="image/*" onChange={handleFileSelect} />
+        <br />
         <button onClick={handleUpload}>Upload</button>
       </div>
       <div className="pimage">

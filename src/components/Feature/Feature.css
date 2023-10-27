@@ -1,0 +1,27 @@
+.feature
+{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    column-gap: 10px;
+}
+.fhead 
+{
+    text-align: center;
+    font-family: "Ubuntu",sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0px;
+}
+.fhead h1
+{
+    color:#407BFF ;
+    margin-bottom: 28px;
+}
+.feature img
+{
+    height: 150px;
+    width: 100%;
+}

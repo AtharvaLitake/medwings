@@ -5,19 +5,24 @@ import { useState } from 'react'
 import { ToastContainer,toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Login_img from '../../Images/Login_Logo.png'
-import MyCart from '../../components/MyCart/MyCart'
+import axios from 'axios'
 const SignUp = () => {
     const [username,setusername]=useState("")
     const [password,setpassword]=useState("")
     const handlesubmit=()=>{
-        toast.success("Registered Successfully")
+      axios.post('http://98.70.49.141/api/signup/',{
+        username:username,
+        password:password
+      }).then((response)=>{
+        toast.success("Registeration Successful")
+      })
     }
   return (
     <>
     <div className="login_heading">
         <h1><u>MedWings</u></h1>
     </div>
-    <div className='Login_page '>
+    <div className='Login_page'>
       <div className="Login_image">
         <img src={Login_img} alt="" />
       </div>
@@ -40,9 +45,8 @@ const SignUp = () => {
       </div>
     </div>
     <ToastContainer></ToastContainer>
-   
     </>
   )
 }
 
-export default SignUp
+export default SignUp

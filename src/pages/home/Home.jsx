@@ -7,21 +7,19 @@ import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
 import Prescription from '../../components/Prescription/Prescription'
 import Medicine from '../Medicine/Medicine'
+import Feature from '../../components/Feature/Feature'
 
 
 
 const Home = () => {
   return (
     <div>
-      {/* <Navbar/>
+      <Navbar/>
       <HomeCarousel/>
-      <Welcome/>
       <Category/>
+      <Feature></Feature>
       <Prescription/>
       <AboutUs/>
-      <Footer/>
-       */}
-       <Medicine/>
     </div>
   )
 }

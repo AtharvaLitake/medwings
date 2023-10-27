@@ -1,12 +1,15 @@
 .Prescription
 {
     display: grid;
-    grid-template-columns: 50% 43%;
+    grid-template-columns: 50% 30%;
     justify-items: center;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color:#407cff9d  ;
 }
 .pupload h1
 {
@@ -14,21 +17,33 @@
     text-align: justify;
     line-height: 50px;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     font-size: 45px;
     margin-top: 0px;
+    font-weight: 700;
 }
 .pimage img
 {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
 }
 .pupload input{
-    margin-left: 15%;
+    margin-left: 20%;
     text-align: center;
-    font-size: 25px;
+    font-size: 25px;
+    margin-bottom: 10px;
 }
-
+.pupload button
+{
+    background-color: rgba(216, 216, 216, 0.674);
+    margin-top: 20px;
+    height: 50px;
+    width: 250px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+}
 @media (max-width: 768px) {
     .Prescription{
     display: flex;

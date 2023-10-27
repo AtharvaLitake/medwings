@@ -9,7 +9,7 @@ const Footer = () => {
     <div>
       <Grid className='bg-white text-black text-center wt-10'
       container 
-      sx={{bgcolor: "#30D5C8", color: "black" ,py: "3"}}>
+      sx={{bgcolor: "#407BFF", color: "black" ,py: "3"}}>
 
         <Grid item xs={12} sx={6} md={3}> 
             <Typography className='pb-6 pt-2' varient='h6'>

@@ -1,25 +1,29 @@
 import React, { useEffect, useState } from "react";
-import "../Medicine/Medicine.css";
+import "../Equipment/Equipment.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 
-const Medicine = ({ cart, setCart }) => {
+const Medicine = () => {
   const [itemlist, setItemlist] = useState([]);
   const [search, setSearch] = useState("");
-  
+  const [cart, setCart] = useState({});
+  const [index, setIndex] = useState(0);
   
 
-  const addToCart = (val_i, val_n, val_p) => {
-    const TotalCart = { id: val_i, name: val_n, price: val_p };
-    const updatedCart = { ...cart, [val_i]: TotalCart };
-    setCart(updatedCart);
-  };
+ const addToCart = (val_i, val_n, val_p ) => {
+   var TotalCart = {id: val_i, name: val_n, price: val_p}
+   var listT = JSON.parse(localStorage.getItem('cart'));
+  
+   listT.push(TotalCart);
+   localStorage.setItem('cart', JSON.stringify(listT));
+ };
 
   useEffect(() => {
-    axios.get("http://98.70.49.141/api/getmedicine/medicine/")
+    localStorage.setItem('cart', JSON.stringify([]))
+    axios
+      .get("http://98.70.49.141/api/getmedicine/equipment/")
       .then((response) => {
-        console.log(response.data)
         setItemlist(response.data);
       })
       .catch((error) => {
