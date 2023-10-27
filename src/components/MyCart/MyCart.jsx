@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './MyCart.css'
 
 function MyCart() {
   // Initialize the cart state as an empty array
