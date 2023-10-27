@@ -6,21 +6,22 @@ import Category from '../../components/Category/Category'
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
 import Prescription from '../../components/Prescription/Prescription'
+import Medicine from '../Medicine/Medicine'
 
 
 
 const Home = () => {
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/>
       <HomeCarousel/>
-      {/* <Welcome/> */}
+      <Welcome/>
       <Category/>
       <Prescription/>
       <AboutUs/>
       <Footer/>
-      {/* <AboutUs/> */}
-      {/* Home, Login Signup */}
+       */}
+       <Medicine/>
     </div>
   )
 }

@@ -40,7 +40,7 @@ const SignUp = () => {
       </div>
     </div>
     <ToastContainer></ToastContainer>
-    <MyCart/>
+   
     </>
   )
 }
