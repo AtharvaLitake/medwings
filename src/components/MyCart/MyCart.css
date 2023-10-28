@@ -1,0 +1,61 @@
+.cart_header
+{
+    font-family: "Ubuntu",sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #407BFF ;
+}
+.all
+{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+}
+.allproduct
+{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    font-size: 25px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.product
+{
+    display: grid;
+    grid-template-columns: 10% 40% 40%;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    background-color:  #407BFF;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 20px;
+}
+.total
+{
+    font-family: "Ubuntu",sans-serif;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000 ;
+}
+.place_btn
+{
+    height: 50px;
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    background-color: #407BFF;
+    margin-top: 20px;
+}

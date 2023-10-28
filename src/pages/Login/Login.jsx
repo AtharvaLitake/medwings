@@ -1,12 +1,13 @@
 import React from 'react'
 import '../Login/Login.css'
-import { Link } from 'react-router-dom'
+import { Link,useNavigate} from 'react-router-dom'
 import { useState } from 'react'
 import axios from 'axios'
 import Login_img from '../../Images/Login_Logo.png'
 import { ToastContainer,toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 const Login = () => {
+    const navigate = useNavigate();
     const [username,setusername]=useState("")
     const [password,setpassword]=useState("")
     const handlesubmit=()=>{
@@ -17,6 +18,7 @@ const Login = () => {
         console.log(response.data)
         localStorage.setItem('token',response.data.access)
         toast.success("Login Successful")
+        navigate('/home');
       })
     }
   return (

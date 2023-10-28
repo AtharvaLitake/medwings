@@ -22,7 +22,7 @@ const Medicine = ({ cart, setCart }) => {
 
   useEffect(() => {
     axios
-      .get("http://98.70.49.141/api/getmedicine/medicine/")
+      .get("http://98.70.49.141/api/getmedicine/hygiene/")
       .then((response) => {
         console.log(response.data);
         setItemlist(response.data);

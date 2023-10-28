@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import "../Equipment/Equipment.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Navbar from "../../components/navbar/Navbar";
 import axios from "axios";
 
-const Medicine = () => {
+const Equipment = () => {
   const [itemlist, setItemlist] = useState([]);
   const [search, setSearch] = useState("");
   const [cart, setCart] = useState({});
@@ -80,4 +81,4 @@ const Medicine = () => {
   );
 };
 
-export default Medicine;
+export default Equipment;

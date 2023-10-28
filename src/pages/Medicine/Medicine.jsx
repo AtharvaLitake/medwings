@@ -9,18 +9,17 @@ const Medicine = ({ cart, setCart }) => {
   const [itemlist, setItemlist] = useState([]);
   const [search, setSearch] = useState("");
 
-  const addToCart = (val_id, val_name, val_price) => {
-    // Create a new item for the cart
-    const newItem = { id: val_id, name: val_name, price: val_price };
-
-    // Update the cart state with the new item
-    setCart([...cart, newItem]);
-
-    // Show a toast notification
-    toast.success(`${val_name} added to cart.`);
-  };
+  const addToCart = (val_i, val_n, val_p ) => {
+    var TotalCart = {id: val_i, name: val_n, price: val_p}
+    var cart_number = localStorage.getItem('cartNumber');
+    localStorage.setItem('cartNumber',JSON.stringify(JSON.parse(cart_number)+1))
+    console.log(TotalCart);
+     
+    localStorage.setItem('order'+cart_number, JSON.stringify(TotalCart));
+  };
 
   useEffect(() => {
+    localStorage.setItem('cartNumber', 0);
     axios
       .get("http://98.70.49.141/api/getmedicine/medicine/")
       .then((response) => {
@@ -65,14 +64,12 @@ const Medicine = ({ cart, setCart }) => {
               </div>
               <div className="price_q">
                 <div className="price">
-                  <h3>Price: ${val.price}</h3>
+                  <h3>Price: &#8377;{val.price}</h3>
                 </div>
                 <div className="buy_btn">
-                  <button
-                    onClick={() => addToCart(val.id, val.name, val.price)}
-                  >
+                <button onClick={()=>{addToCart(val.id,val.name,val.price)}}>
                     Add to Cart <i className="fas fa-cart-shopping"></i>
-                  </button>
+                 </button>
                 </div>
               </div>
             </div>
