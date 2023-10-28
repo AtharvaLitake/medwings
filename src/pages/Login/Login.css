@@ -3,8 +3,7 @@
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     color: #407BFF;
-    margin-top: 15px;
-    font-size: 25px;
+    font-size:60px;
 }
 .Login_page
 {
@@ -32,7 +31,7 @@
 }
 .Login_form h2
 {
-    font-size: 40px;
+    font-size:40px;
     color: #407BFF;
     font-weight: 800;
     margin-bottom: 15px;

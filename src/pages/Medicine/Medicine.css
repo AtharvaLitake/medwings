@@ -87,67 +87,7 @@
     margin-bottom: 20px;
     padding: 10px;
   }
-.noitems
-{
-    display: grid;
-    grid-template-columns: 22% 22% 22% 22%;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    font-family: "Ubuntu",sans-serif;
-    row-gap: 20px;
-    column-gap: 10px;
-}
-.imedicine
-{
-    display: grid;
-    grid-template-columns: 100%;
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.479);
-    row-gap: 2px;
-    padding: 15px;
-    text-align: center;
-    margin-top: 10px;
-}
-.medhead h3
-{
-   font-size: 25px;
-   margin-bottom: 5px;
-}
-.medimg img
-{
-    height: 220px;
-    width: 100%;
-    margin-bottom: 5px;
-}
-.price_q
-{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 10px;
-}
-.price
-{
-    font-size: 18px;
-}
-.buy_btn button
-{
-    background-color: #407BFF;
-    color: white;
-    height: 38px;
-    width: 150px;
-    border-radius: 30px;
-    border: none;
-    font-size: 16px;
-    font-weight: 600;
-}
-.imedicine:hover
-{
-    background-color: #f0f5ffc4;
-    box-shadow: 2px 2px 2px 2px rgba(38, 38, 38, 0.479);
-    transition: all ease-in 0.3s;
-}
+  .search_bar input:focus
+  {
+    outline: none;
+  }

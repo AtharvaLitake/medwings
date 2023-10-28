@@ -40,13 +40,13 @@ const Login = () => {
         <br />
         <Link>
         <button className='login_button' onClick={handlesubmit}>
-            LogIn
+            LogIn <span>&nbsp;</span><i class="fa-solid fa-lock"></i>
         </button>
         <br />
         </Link>
         <Link to=''>
         <button>
-            Sign Up
+            Sign Up  <span>&nbsp;</span> <i class="fas fa-sign-in"></i>
         </button>
         </Link>
       </div>

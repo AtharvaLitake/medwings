@@ -1,3 +1,7 @@
+.Features
+{
+    background-color: #407BFF;
+}
 .feature
 {
     display: grid;
@@ -6,18 +10,22 @@
     justify-items: center;
     align-items: center;
     column-gap: 10px;
+    background-color: #407BFF;
+    padding: 20px;
 }
 .fhead 
 {
     text-align: center;
     font-family: "Ubuntu",sans-serif;
-    font-size: 25px;
+    font-size:25px;
     font-weight: 700;
     margin: 0px;
+    background-color: #407BFF;
 }
 .fhead h1
 {
-    color:#407BFF ;
+    font-size: 50px;
+    color:#ffffff ;
     margin-bottom: 28px;
 }
 .feature img

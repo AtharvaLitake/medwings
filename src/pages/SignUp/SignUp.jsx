@@ -38,7 +38,7 @@ const SignUp = () => {
         <br />
         <Link>
         <button className='login_button' onClick={handlesubmit}>
-            Register
+            Register <span>&nbsp;</span> <i class="fas fa-sign-in"></i>
         </button>
         <br />
         </Link>
